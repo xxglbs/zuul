@@ -9,6 +9,7 @@ public class ZuulBootstrap extends Bootstrap {
         this.bootstrap = bootstrap;
     }
     public AddressResolver<?> getResolver(final EventLoop eventLoop) {
+        System.out.println("记录一下");
         return bootstrap.resolver().getResolver(eventLoop);
     }
 }
